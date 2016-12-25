@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import -mwindows CMakeFiles/flk_tester.dir/main.cpp.o  -o flk_tester.exe -Wl,--out-implib,libflk_tester.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -L/usr/x86_64-w64-mingw32/sys-root/mingw/lib  -lfltk 

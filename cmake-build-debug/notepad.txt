@@ -1,0 +1,15 @@
+
+add_definitions(-D_WIN32)
+
+set(SOURCE_FILES main.cpp)
+
+add_executable(hellofltk WIN32 ${SOURCE_FILES})
+
+target_include_directories (hellofltk PUBLIC
+        /usr/x86_64-w64-mingw32/sys-root/mingw/include/FL)
+
+target_link_libraries(hellofltk PUBLIC
+        /usr/x86_64-w64-mingw32/sys-root/mingw/lib/libfltk.a
+        /usr/x86_64-w64-mingw32/sys-root/mingw/lib/libgdi32.a
+        )
+
